@@ -1,0 +1,40 @@
+.bgColor {
+    background-color: white;
+    height: 300px;
+    margin-top: 10%;
+}
+
+.unorderedList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.newsletterSubmit {
+    border-style: solid;
+    border-bottom: solid;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    width: 70%;
+}
+
+.newsLetterText {
+    font-style: italic;
+    font-size: 14px;
+}
+
+.submitBtn {
+    padding: 10px;
+    border: none;
+    background-color: white;
+    color: #fc4a1a;
+}
+
+.submitBtn:hover {
+    color: #f7b733;
+}
+
+.emailCollect {
+    border: none;
+}

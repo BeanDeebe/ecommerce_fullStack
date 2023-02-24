@@ -1,0 +1,13 @@
+.productCard {
+    margin-top: 3px;
+    margin-left: 1px;
+    border: none;
+    height: 500px;
+}
+
+.cardTop{
+    width: 90%;
+    height: 25vw;
+    padding: 10px;
+    object-fit:contain;
+}

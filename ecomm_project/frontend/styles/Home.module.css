@@ -1,0 +1,92 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.heroWrapper {
+  position: relative;
+  width: 100vw;
+  height: 50vh;
+}
+
+.imageWrapper {
+  z-index: -1;
+}
+
+.heroContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.duck {
+  z-index: -1;
+  overflow: hidden;
+}
+
+.cardLeft {
+  width: 45%;
+  margin-left: 5%;
+  border: none
+}
+
+.cardRight {
+  width: 45%;
+  margin-right: 5%;
+  border: none;
+}
+
+.cardButtonRight{
+  background-color: white;
+  border: none;
+  color: #fc4a1a;  /* fallback for old browsers */
+  color: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
+  color: linear-gradient(to right, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+}
+
+.cardButtonRight:hover {
+  width: 75%;
+  text-decoration: underline;
+  background-color: white;
+  color:#fc4a1a;
+  transition: all .1s ease;
+-webkit-transition: all .1s ease;
+}
+
+.cardButtonLeft {
+  background-color: white;
+  width: 75%;
+  border: none;
+  color: #fc4a1a;  /* fallback for old browsers */
+  color: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
+  color: linear-gradient(to right, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+}
+
+.cardButtonLeft:hover {
+  width: 75%;
+  text-decoration: underline;
+  background-color: white;
+  color:#fc4a1a;
+  transition: all .1s ease;
+  -webkit-transition: all .1s ease;
+}
+
+.generalButton {
+  margin-bottom: 10px;
+  margin-top: auto;
+  border: none;
+  color: black;
+  background: none;
+  
+}
+
+.generalButton:hover {
+  text-decoration: underline;
+  transition: all .1s ease-in;
+  background: none;
+  color: black;
+}
