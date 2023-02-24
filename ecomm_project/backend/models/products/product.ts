@@ -5,4 +5,5 @@ export default interface Product {
     productName: string,
     price: number,
     description: string,
+    category: string,
 }

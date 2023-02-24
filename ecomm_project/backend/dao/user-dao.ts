@@ -48,9 +48,8 @@ export default class UserDao implements UserDaoI {
      * @param {User} user Instance to be inserted into the database
      * @returns Promise To be notified when user is inserted into the database
      */
-    createUser = async (user: User): Promise<User> => {
-        const newUser = UserModel.create(user);
-        return newUser;
+    createUser = async (user: User): Promise<any> => {
+        UserModel.create(user);   
     }
 
     /**

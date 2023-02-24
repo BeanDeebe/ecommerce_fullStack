@@ -2,11 +2,11 @@ import express, {Request, Response} from 'express';
 import mongoose from 'mongoose';
 
 //import controllers here
+import ProductController from "./controllers/products-controller";
 
 /**
- * @const {string} Represents the connection string for MongoDB Atlas connection
+ * @const {string} Represents the connection string for MongoDB Community connection
  */
-
 const connectionString = "mongodb://localhost:27017/duck-db"
 mongoose.connect(connectionString)
 const db = mongoose.connection;
@@ -31,5 +31,7 @@ app.get('/', (req: Request, res: Response) => {
     res.send('Running!')
 });
 
-const PORT = 3000
+ProductController.getInstance(app);
+
+const PORT = 4000
 app.listen(process.env.PORT || PORT);
