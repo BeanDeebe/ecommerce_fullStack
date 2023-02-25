@@ -14,10 +14,8 @@ export default class ProductController implements ProductControllerI {
 
             app.get("/api/products", ProductController.productController.findAllProducts);
             app.post("/api/products", ProductController.productController.createProduct);
-            app.get("/api/products/:pid", ProductController.productController.findProductById);
-            app.get("/api/products/:pid", ProductController.productController.deleteProduct);
-            app.get("/api/products/:pid", ProductController.productController.updateProduct);
-            app.get("/api/products/:productName", ProductController.productController.findProductByProductName);
+            app.delete("/api/products/:pid", ProductController.productController.deleteProduct);
+            app.put("/api/products/:pid", ProductController.productController.updateProduct);
         }
         return ProductController.productController;
     }
@@ -27,13 +25,6 @@ export default class ProductController implements ProductControllerI {
     findAllProducts = (req: Request, res: Response) => {
         ProductController.productDao.findAllProducts().then((products: Product[]) => res.json(products));
     }
-
-    findProductByProductName = (req: Request, res: Response) => {
-        ProductController.productDao.findProductByProductName(req.params.productName).then((product: Product) => res.json(product));
-    }
-
-    findProductById = (req: Request, res: Response) =>
-        ProductController.productDao.findProductById(req.params.pid).then((product:Product)=> res.json(product));
 
     createProduct = (req: Request, res: Response) => {
         ProductController.productDao.createProduct(req.body).then((product:Product) => res.json(product));
