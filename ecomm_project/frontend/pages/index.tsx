@@ -2,7 +2,8 @@ import Head from 'next/head'
 import Navbar from '../components/Navbar/navbar';
 import HeroCard from '../components/HeroCard/heroCard';
 import FeatureSection from "../components/FeatureSection/featureSection";
-import ProductCarousel from '@/components/ProductCarousel/productCarousel';
+
+import ProductCarousel from "@/components/ProductCarousel/productCarousel";
 import Footer from "@/components/Footer/footer";
 
 

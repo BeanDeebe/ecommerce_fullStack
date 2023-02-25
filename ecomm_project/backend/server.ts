@@ -1,5 +1,6 @@
 import express, {Request, Response} from 'express';
 import mongoose from 'mongoose';
+import cors from 'cors';
 
 //import controllers here
 import ProductController from "./controllers/products-controller";
@@ -19,7 +20,7 @@ db.once("open", function () {
  * @const {Express} Represents the express app
  */
 const app = express();
-app.use(express.json());
+app.use(cors({ origin: 'http://localhost:3000'}), express.json());
 
 
 /**
