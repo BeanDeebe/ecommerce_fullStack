@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-
+import Cart from '../cart/cart-schema'
 
 const UserSchema = new mongoose.Schema({
     username: {
@@ -15,7 +15,7 @@ const UserSchema = new mongoose.Schema({
         required: true,
     },
     cart: {
-        type: Array,
+        type: typeof Cart,
         required: false,
     },
     shippingAddress: {
