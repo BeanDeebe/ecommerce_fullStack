@@ -1,8 +1,10 @@
 import express, {Request, Response} from 'express';
 import mongoose from 'mongoose';
+import cors from 'cors';
 
 //import controllers here
 import ProductController from "./controllers/products-controller";
+import UserController from "./controllers/user-controller";
 
 /**
  * @const {string} Represents the connection string for MongoDB Community connection
@@ -19,7 +21,7 @@ db.once("open", function () {
  * @const {Express} Represents the express app
  */
 const app = express();
-app.use(express.json());
+app.use(cors({ origin: 'http://localhost:3000'}), express.json());
 
 
 /**
@@ -32,6 +34,7 @@ app.get('/', (req: Request, res: Response) => {
 });
 
 ProductController.getInstance(app);
+UserController.getInstance(app);
 
 const PORT = 4000
 app.listen(process.env.PORT || PORT);

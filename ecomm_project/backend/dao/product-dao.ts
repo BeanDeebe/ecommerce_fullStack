@@ -15,12 +15,6 @@ export default class ProductDao implements ProductDaoI {
     private constructor() {
 
     }
-
-    findProductByProductName = async (productName: string): Promise<any> => 
-        ProductModel.findOne({productName: productName});
-
-    findProductById = async (pid: string): Promise<any> =>
-        ProductModel.findById({pid});
     
     createProduct = async (product: Product): Promise<any> =>
         ProductModel.create(product);

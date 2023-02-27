@@ -7,8 +7,37 @@ export default function Footer() {
             <hr/>
             <div className="container">
                 <div className="row">
+                    <div className="col-2 mt-2">
+                        <h3>Duck</h3>
+                    </div>
+                    <div className="col-2 mt-2">
+                        <p>Products</p>
+                        <ul className={style.unorderedList}>
+                            <li>
+                                <Link href="#">
+                                    Outerwear
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="#">
+                                    Footwear
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="#">
+                                    Snow
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="#">
+                                    Cycling
+                                </Link>
+                            </li>
+                        </ul>
+                    </div>
                     <div className="col-2 mt-2 mx-auto">
                         <ul className={style.unorderedList}>
+                            <p>Company</p>
                             <li>
                                 <Link href="#">
                                     Shop
@@ -23,7 +52,12 @@ export default function Footer() {
 
                             <li>
                                 <Link href="#">
-                                    About Us
+                                    About
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="#">
+
                                 </Link>
                             </li>
                             
@@ -50,6 +84,7 @@ export default function Footer() {
                     
                 </div>
             </div>
+            <p className={style.signOff}>Created by <a href="http://www.linkedin.com/in/deanbeebe">Dean Beebe</a></p>
         </div>
     )
 }

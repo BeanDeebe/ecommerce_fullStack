@@ -1,4 +1,5 @@
 import mongoose from 'mongoose';
+import Product from '../products/products-schema'
 
 export default interface User {
     _id?: mongoose.Schema.Types.ObjectId,
@@ -6,4 +7,5 @@ export default interface User {
     password: string,
     email: string,
     shippingAddress?: string,
+    cart?: Array<typeof Product>
 }

@@ -19,6 +19,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "backend/index.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "backend/index.js", "components/ProductCarousel/productCarousel.js", "components/Product/ProductItem.js", "components/Product/ProductGrid.tsx"],
   "exclude": ["node_modules"]
 }

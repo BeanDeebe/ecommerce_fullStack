@@ -1,11 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
+import styles from '@/styles/Nav.module.css';
 
 export default function Navbar() {
     return (
         <>
         <div className="container-fluid navbarFix">
-            <nav className="navbar navbar-expand">
+            <nav className="navbar navbar-expand" id={styles.navShadow}>
                 <div className="ms-2 container-fluid">
                     <div className="navbar-nav">
                         <div className="nav-item p-3">
@@ -18,7 +19,7 @@ export default function Navbar() {
                         </div>
                     </div>
                         <div className="navbar-brand text-dark">
-                            <h2>Duck</h2>
+                            <h2><a href="/">Duck</a></h2>
                         </div>
                     <div className="nav-item mr-auto p-3">
                         <Link className="text-dark text-decoration-none" href="/cart">My Cart</Link>
