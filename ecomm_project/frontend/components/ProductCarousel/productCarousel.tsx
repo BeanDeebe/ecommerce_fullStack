@@ -4,7 +4,7 @@ import { Carousel, Card, CardImg, Stack } from 'react-bootstrap';
 import style from "@/styles/Carousel.module.css"
 import Product from "../../../backend/models/products/product";
 
-export default function ProductCarouselTest() {
+export default function ProductCarousel() {
     const [products, setProducts] = useState<Product[]>([]);
     
     useEffect(() => {
@@ -15,10 +15,7 @@ export default function ProductCarouselTest() {
             }
         })
             .then(response => response.json())
-            .then(data => {
-                console.log(data);
-                setProducts(data);
-            })
+            .then(data => setProducts(data))
             .catch(error => console.error(error));
     }, []);
 

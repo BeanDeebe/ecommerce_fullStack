@@ -38,3 +38,10 @@
 .emailCollect {
     border: none;
 }
+
+.signOff {
+    color: gray;
+    font-size: small;
+    text-align: center;
+    margin-top: 10px;
+}

@@ -1,0 +1,10 @@
+
+.jumbotron {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #5a5858;
+    color: white;
+    opacity: 80%;
+}
