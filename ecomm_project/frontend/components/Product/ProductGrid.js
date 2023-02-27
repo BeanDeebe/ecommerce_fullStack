@@ -20,7 +20,7 @@ export default function ProductGrid() {
 
     return (
         <div className={styles.productGrid}>
-            <Row xs={1} md={4} className="g-4">
+            <Row xs={1} md={4} className="g-4 p-5">
             {products.map(product => (
                     <Col>
                         <ProductItem key={product._id} product={product} />

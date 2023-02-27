@@ -22,7 +22,7 @@
 .productImg {
     margin: 0.5rem;
     height: auto;
-    object-fit: contain;
+    object-fit: scale-down;
 }
 
 .container {

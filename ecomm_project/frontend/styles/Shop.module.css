@@ -2,7 +2,7 @@
 .jumbotron {
     height: 400px;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     background: #FBD786;
     color: rgb(0, 0, 0);
