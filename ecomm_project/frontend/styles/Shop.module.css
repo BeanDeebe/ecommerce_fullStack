@@ -2,9 +2,11 @@
 .jumbotron {
     height: 400px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    background: #5a5858;
-    color: white;
+    background: #FBD786;
+    color: rgb(0, 0, 0);
     opacity: 80%;
+    margin-top: 10px;
+    padding-left: 10px;
 }

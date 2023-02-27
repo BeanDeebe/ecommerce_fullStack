@@ -7,7 +7,9 @@ import ProductGrid from "@/components/Product/ProductGrid";
 export default function Shop() {
     return(
         <div>
-            <Navbar />
+            <div>
+                <Navbar />
+            </div>
             <div className={styles.jumbotron}>
                 <h1>New Styles, Every Month.</h1>
             </div>
