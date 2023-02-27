@@ -19,29 +19,12 @@ export default class UserDao implements UserDaoI {
     private constructor() {
     }
 
-     /**
-     * Uses UserModel to retrieve single user document from users collection
-     * @param {string} uid User's primary key
-     * @returns Promise To be notified when user is retrieved from the database
-     */
-    findUserById = async (uid: string): Promise<any> => {
-        return UserModel.findById(uid);
-    }
 
     /**
      * Uses UserModel to retrieve all users from users collection
      */
     findAllUsers = async (): Promise<any> => {
         return UserModel.find();}
-
-    /**
-     * Uses UserModel to retrieve single user document from users collection
-     * by their username
-     * @param {string} username User's username
-     * @returns Promise To be notified when user is retrieved from the database
-     */
-    findUserByUsername = async (username: string): Promise<any> =>
-        UserModel.findOne({username: username});
 
     /**
      * Inserts user instance into the database

@@ -4,6 +4,7 @@ import cors from 'cors';
 
 //import controllers here
 import ProductController from "./controllers/products-controller";
+import UserController from "./controllers/user-controller";
 
 /**
  * @const {string} Represents the connection string for MongoDB Community connection
@@ -33,6 +34,7 @@ app.get('/', (req: Request, res: Response) => {
 });
 
 ProductController.getInstance(app);
+UserController.getInstance(app);
 
 const PORT = 4000
 app.listen(process.env.PORT || PORT);
