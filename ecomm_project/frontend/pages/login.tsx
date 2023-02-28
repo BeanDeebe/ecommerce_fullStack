@@ -3,7 +3,7 @@ import style from '@/styles/Login.module.css';
 export default function Login() {
     return (
         <div >
-            <span><img className="m-2" src="./duck-line-art-pitr-Ducky-icon.svg" height={50} width={50}/></span>
+            <span><a href="/"><img className="m-2" src="./duck-line-art-pitr-Ducky-icon.svg" height={50} width={50}/></a></span>
             <div>
                 <Card style={{width: '23rem', border:'none'}} className="shadow-lg p-3 mb-5 bg-white rounded mx-auto" >
                     <Card.Body >
@@ -11,7 +11,9 @@ export default function Login() {
                             Sign in
                         </Card.Title>
                         <Card.Text>
-                            <p className="font-weight-light">Access to hundreds of deals and steals await.</p>
+                            <div>
+                                <p className="font-weight-light">Access to hundreds of deals and steals await.</p>
+                            </div>
                             <div className="d-grid gap-2 mb-2">
                                 <input style={{borderRadius: 10}} className="mb-2 p-2" type="text" placeholder="Username"/>
                             </div>
